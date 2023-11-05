@@ -1,0 +1,38 @@
+@import 'color.scss';
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $bg-color-secondary-dark;
+    outline: 3px solid $bg-color-secondary-dark;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $bg-color-primary-dark;
+}
+
+@media (prefers-color-scheme: light) {
+    ::-webkit-scrollbar-thumb {
+            background-color: $bg-color-secondary-light;
+            outline: 3px solid $bg-color-secondary-light;
+            border-radius: 2px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            -o-border-radius: 2px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: $bg-color-primary-light;
+        }
+}

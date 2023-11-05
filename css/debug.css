@@ -1,0 +1,79 @@
+h1 {
+  outline: rgb(14, 232, 22) 2px solid;
+}
+
+h2 {
+  outline: rgb(130, 79, 75) 2px solid;
+}
+
+h3 {
+  outline: rgb(223, 237, 33) 2px solid;
+}
+
+h4 {
+  outline: rgb(47, 188, 105) 2px solid;
+}
+
+h5 {
+  outline: rgb(128, 225, 127) 2px solid;
+}
+
+p {
+  outline: rgb(68, 134, 71) 2px solid;
+}
+
+li {
+  outline: rgb(112, 55, 194) 2px solid;
+}
+
+a {
+  outline: rgb(254, 175, 109) 2px solid;
+}
+
+strong {
+  outline: rgb(103, 161, 41) 2px solid;
+}
+
+small {
+  outline: rgb(204, 212, 150) 2px solid;
+}
+
+em {
+  outline: rgb(107, 40, 49) 2px solid;
+}
+
+button {
+  outline: rgb(143, 238, 91) 2px solid;
+}
+
+div {
+  outline: rgb(58, 191, 69) 2px solid;
+}
+
+img {
+  outline: rgb(239, 150, 23) 2px solid;
+}
+
+nav {
+  outline: rgb(152, 70, 223) 2px solid;
+}
+
+menu {
+  outline: rgb(110, 239, 58) 2px solid;
+}
+
+section {
+  outline: rgb(107, 15, 51) 2px solid;
+}
+
+span {
+  outline: rgb(55, 215, 97) 2px solid;
+}
+
+svg {
+  outline: rgb(239, 194, 255) 2px solid;
+}
+
+.card {
+  overflow: visible;
+}/*# sourceMappingURL=debug.css.map */

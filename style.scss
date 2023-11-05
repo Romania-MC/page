@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'css/color.scss';
+@import 'css/scrollbar.scss';
+@import 'css/grid.scss';
+@import 'css/cards.scss';
+
+$globe-dark: "img/globe/dark/x2048.png";
+$globe-light: "img/globe/light/x2048.png";
+
+$section-padding: 25%;
+$section-distance: 50%;
+
+body{
+    font-family: $fg-font-primary;
+}
+body{
+    margin: 0;
+    color: $fg-color-primary-dark;
+    background-color: $bg-color-primary-dark;
+    background-position-y: 100px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 2500px;
+    color: $fg-color-primary-dark;
+}
+
+#backdrop-blur{
+    backdrop-filter: blur(4px);
+    height: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+    body{
+        background-color: $bg-color-primary-light;
+        background-image: url($globe-light);
+        color: $fg-color-primary-light;
+    }
+}
+
+.top{
+    padding-top: 250px;
+    background: linear-gradient(180deg, rgba(70, 50, 70, 1) 0%, $bg-color-primary-dark 100%);
+}
+
+.top h1{
+    text-align: center;
+    font-size: 1000%;
+    animation: title 1.5s ease normal;
+    -webkit-animation: title 1.5s ease normal;
+}
+
+.top h2{
+    text-align: center;
+    font-size: 200%;
+    animation: subtitle 1.5s ease normal;
+    -webkit-animation: subtitle 1.5s ease normal;
+    transform: translateX(0) translateY(-50px) translateZ(0);
+    -webkit-transform: translateX(0) translateY(-50px) translateZ(0);
+    -moz-transform: translateX(0) translateY(-50px) translateZ(0);
+    -ms-transform: translateX(0) translateY(-50px) translateZ(0);
+    -o-transform: translateX(0) translateY(-50px) translateZ(0);
+}
+
+main h2.text{
+    font-size: 350%;
+}
+main h3.text {
+    font-size: 250%;
+}
+
+main p.text{
+    font-size: 150%;
+}
+
+main{
+    text-align: center;
+    margin-bottom: $section-distance;
+}
+
+@keyframes title {
+    from {
+        font-size: 980%;
+        transform: translateX(0) translateY(-50px) translateZ(0);
+        -webkit-transform: translateX(0) translateY(-50px) translateZ(0);
+        -moz-transform: translateX(0) translateY(-50px) translateZ(0);
+        -ms-transform: translateX(0) translateY(-50px) translateZ(0);
+        -o-transform: translateX(0) translateY(-50px) translateZ(0);
+        -webkit-filter: blur(1);
+        color: transparent;
+}
+
+    to {
+        transform: translateX(0%) translateY(0%) translateZ(0%);
+        -webkit-transform: translateX(0%) translateY(0%) translateZ(0%);
+        -moz-transform: translateX(0%) translateY(0%) translateZ(0%);
+        -ms-transform: translateX(0%) translateY(0%) translateZ(0%);
+        -o-transform: translateX(0%) translateY(0%) translateZ(0%);
+    }
+}
+
+@keyframes subtitle {
+    from {
+        font-size: 180%;
+        transform: translateX(0) translateY(-100px) translateZ(0);
+        -webkit-transform: translateX(0) translateY(-100px) translateZ(0);
+        -moz-transform: translateX(0) translateY(-100px) translateZ(0);
+        -ms-transform: translateX(0) translateY(-100px) translateZ(0);
+        -o-transform: translateX(0) translateY(-100px) translateZ(0);
+        -webkit-filter: blur(1);
+        color: transparent;
+    }
+}
+
+@keyframes play {
+    0% {
+        transform: rotateX(45deg) translateY(-50%);
+    }
+
+    100% {
+        transform: rotateX(45deg) translateY(0);
+    }
+}
+
+.section{
+    margin-top: $section-distance;
+    width: 100%;
+}
+

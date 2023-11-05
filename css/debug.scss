@@ -1,0 +1,29 @@
+$tags: (
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    li,
+    a,
+    strong,
+    small,
+    em,
+    button,
+    div,
+    img,
+    nav,
+    menu,
+    section,
+    span,
+    svg
+);
+@each $tag in $tags {
+    #{$tag} {
+        outline: rgb(random(255), random(255), random(255)) 2px solid;
+    }
+}
+.card{
+    overflow: visible;
+}
