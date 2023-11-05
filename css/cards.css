@@ -156,4 +156,18 @@
 .button:hover,
 .button:focus {
   background-color: #008170;
+}
+
+@media (prefers-color-scheme: light) {
+  .button {
+    background-color: #7743DB;
+    color: #1f2328;
+  }
+  .button:hover,
+  .button:focus {
+    background-color: #C3ACD0;
+  }
+  .card-title::after {
+    background: #FFFBF5;
+  }
 }/*# sourceMappingURL=cards.css.map */

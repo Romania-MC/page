@@ -162,3 +162,19 @@ $card-animation-duration: 500ms;
 .button:focus {
     background-color: $bg-color-tertiary-dark;
 }
+
+@media (prefers-color-scheme: light) {
+    .button {
+        background-color: $bg-color-button-light;
+        color: $fg-color-primary-light;
+    }
+
+    .button:hover,
+    .button:focus {
+        background-color: $bg-color-tertiary-light;
+    }
+
+    .card-title::after {
+        background: $bg-color-primary-light
+    }
+}

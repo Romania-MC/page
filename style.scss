@@ -24,19 +24,6 @@ body{
     color: $fg-color-primary-dark;
 }
 
-#backdrop-blur{
-    backdrop-filter: blur(4px);
-    height: 100%;
-}
-
-@media (prefers-color-scheme: light) {
-    body{
-        background-color: $bg-color-primary-light;
-        background-image: url($globe-light);
-        color: $fg-color-primary-light;
-    }
-}
-
 .top{
     padding-top: 250px;
     background: linear-gradient(180deg, rgba(70, 50, 70, 1) 0%, $bg-color-primary-dark 100%);
@@ -126,3 +113,12 @@ main{
     width: 100%;
 }
 
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: $bg-color-primary-light;
+        color: $fg-color-primary-light;
+    }
+    .top {
+        background: linear-gradient(180deg, rgba(70, 50, 70, 1) 0%, $bg-color-primary-light 100%);
+    }
+}
