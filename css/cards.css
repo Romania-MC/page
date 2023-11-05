@@ -5,6 +5,7 @@
   grid-template-areas: "a b c";
   -moz-column-gap: 25px;
        column-gap: 25px;
+  grid-gap: 25px;
 }
 
 .card#one {
@@ -168,6 +169,11 @@
     background-color: #C3ACD0;
   }
   .card-title::after {
-    background: #FFFBF5;
+    background: #C3ACD0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #cards {
+    grid-template-areas: "a" "b" "c";
   }
 }/*# sourceMappingURL=cards.css.map */
